@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbVeterinariaModelStoreContainer" CdmEntityContainer="dbVeterinariaEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="dbVeterinariaModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="dbVeterinariaModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+          <ScalarProperty Name="NomeComp" ColumnName="NomeComp" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Cep" ColumnName="Cep" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Rua" ColumnName="Rua" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pets">
+      <EntityTypeMapping TypeName="dbVeterinariaModel.Pets">
+        <MappingFragment StoreEntitySet="Pets">
+          <ScalarProperty Name="IdPet" ColumnName="IdPet" />
+          <ScalarProperty Name="NomePet" ColumnName="NomePet" />
+          <ScalarProperty Name="Nascimento" ColumnName="Nascimento" />
+          <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Raca" ColumnName="Raca" />
+          <ScalarProperty Name="UltimaConsulta" ColumnName="UltimaConsulta" />
+          <ScalarProperty Name="ProximaConsulta" ColumnName="ProximaConsulta" />
+          <ScalarProperty Name="Historico" ColumnName="Historico" />
+          <ScalarProperty Name="RgVet" ColumnName="RgVet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemUsers">
+      <EntityTypeMapping TypeName="dbVeterinariaModel.SystemUsers">
+        <MappingFragment StoreEntitySet="SystemUsers">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+          <ScalarProperty Name="NomeComp" ColumnName="NomeComp" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Veterinarios">
+      <EntityTypeMapping TypeName="dbVeterinariaModel.Veterinarios">
+        <MappingFragment StoreEntitySet="Veterinarios">
+          <ScalarProperty Name="IdVeterinario" ColumnName="IdVeterinario" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="RG" ColumnName="RG" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Especialidade" ColumnName="Especialidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

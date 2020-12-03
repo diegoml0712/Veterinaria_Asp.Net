@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbVeterinariaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="RgUsuario" />
+    </Key>
+    <Property Name="RgUsuario" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NomeComp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CPF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telefone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cep" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cidade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Bairro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Rua" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Numero" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Complemento" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Referencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Pets">
+    <Key>
+      <PropertyRef Name="IdPet" />
+    </Key>
+    <Property Name="IdPet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomePet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Nascimento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RgUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Especie" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Raca" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UltimaConsulta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProximaConsulta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Historico" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RgVet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SystemUsers">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RgUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NomeComp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="senha" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Cargo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Veterinarios">
+    <Key>
+      <PropertyRef Name="IdVeterinario" />
+    </Key>
+    <Property Name="IdVeterinario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Telefone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Especialidade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="dbVeterinariaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Pets" EntityType="Self.Pets" />
+    <EntitySet Name="SystemUsers" EntityType="Self.SystemUsers" />
+    <EntitySet Name="Veterinarios" EntityType="Self.Veterinarios" />
+  </EntityContainer>
+</Schema>

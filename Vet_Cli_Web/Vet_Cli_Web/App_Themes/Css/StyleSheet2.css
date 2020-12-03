@@ -1,0 +1,35 @@
+﻿body {
+    margin: 0px;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #87CEFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*.box {
+    width: 800px;
+    height: 600px;
+    background: #87CEFA;
+}*/
+
+.box2 {
+    text-align: "center";
+    
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+

@@ -1,0 +1,25 @@
+﻿body {
+    margin: 0px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #87CEFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+
+  }
+
+.tabela {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.dados{
+    vertical-align:auto;
+}

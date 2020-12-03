@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="dbVeterinariaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="RgUsuario" />
+          </Key>
+          <Property Name="RgUsuario" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="NomeComp" Type="nvarchar(max)" />
+          <Property Name="CPF" Type="nvarchar(max)" />
+          <Property Name="Telefone" Type="nvarchar(max)" />
+          <Property Name="Cep" Type="nvarchar(max)" />
+          <Property Name="UF" Type="nvarchar(max)" />
+          <Property Name="Cidade" Type="nvarchar(max)" />
+          <Property Name="Bairro" Type="nvarchar(max)" />
+          <Property Name="Rua" Type="nvarchar(max)" />
+          <Property Name="Numero" Type="nvarchar(max)" />
+          <Property Name="Complemento" Type="nvarchar(max)" />
+          <Property Name="Referencia" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Pets">
+          <Key>
+            <PropertyRef Name="IdPet" />
+          </Key>
+          <Property Name="IdPet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NomePet" Type="nvarchar(max)" />
+          <Property Name="Nascimento" Type="datetime" Nullable="false" />
+          <Property Name="RgUsuario" Type="nvarchar(max)" />
+          <Property Name="Especie" Type="nvarchar(max)" />
+          <Property Name="Raca" Type="nvarchar(max)" />
+          <Property Name="UltimaConsulta" Type="datetime" Nullable="false" />
+          <Property Name="ProximaConsulta" Type="datetime" Nullable="false" />
+          <Property Name="Historico" Type="nvarchar(max)" />
+          <Property Name="RgVet" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="SystemUsers">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RgUsuario" Type="nvarchar(max)" />
+          <Property Name="NomeComp" Type="nvarchar(max)" />
+          <Property Name="senha" Type="nvarchar(max)" />
+          <Property Name="Cargo" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Veterinarios">
+          <Key>
+            <PropertyRef Name="IdVeterinario" />
+          </Key>
+          <Property Name="IdVeterinario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="nvarchar(max)" />
+          <Property Name="RG" Type="nvarchar(max)" />
+          <Property Name="Telefone" Type="nvarchar(max)" />
+          <Property Name="Especialidade" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="dbVeterinariaModelStoreContainer">
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pets" EntityType="Self.Pets" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemUsers" EntityType="Self.SystemUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Veterinarios" EntityType="Self.Veterinarios" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbVeterinariaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="RgUsuario" />
+          </Key>
+          <Property Name="RgUsuario" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NomeComp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CPF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cep" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UF" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cidade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Bairro" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Rua" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Numero" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Complemento" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Referencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Pets">
+          <Key>
+            <PropertyRef Name="IdPet" />
+          </Key>
+          <Property Name="IdPet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NomePet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Nascimento" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RgUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Especie" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Raca" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UltimaConsulta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProximaConsulta" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Historico" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RgVet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="SystemUsers">
+          <Key>
+            <PropertyRef Name="IdUsuario" />
+          </Key>
+          <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RgUsuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NomeComp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="senha" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Veterinarios">
+          <Key>
+            <PropertyRef Name="IdVeterinario" />
+          </Key>
+          <Property Name="IdVeterinario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telefone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Especialidade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="dbVeterinariaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="Pets" EntityType="Self.Pets" />
+          <EntitySet Name="SystemUsers" EntityType="Self.SystemUsers" />
+          <EntitySet Name="Veterinarios" EntityType="Self.Veterinarios" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbVeterinariaModelStoreContainer" CdmEntityContainer="dbVeterinariaEntities">
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="dbVeterinariaModel.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="dbVeterinariaModel.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+                <ScalarProperty Name="NomeComp" ColumnName="NomeComp" />
+                <ScalarProperty Name="CPF" ColumnName="CPF" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Cep" ColumnName="Cep" />
+                <ScalarProperty Name="UF" ColumnName="UF" />
+                <ScalarProperty Name="Cidade" ColumnName="Cidade" />
+                <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+                <ScalarProperty Name="Rua" ColumnName="Rua" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+                <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pets">
+            <EntityTypeMapping TypeName="dbVeterinariaModel.Pets">
+              <MappingFragment StoreEntitySet="Pets">
+                <ScalarProperty Name="IdPet" ColumnName="IdPet" />
+                <ScalarProperty Name="NomePet" ColumnName="NomePet" />
+                <ScalarProperty Name="Nascimento" ColumnName="Nascimento" />
+                <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+                <ScalarProperty Name="Especie" ColumnName="Especie" />
+                <ScalarProperty Name="Raca" ColumnName="Raca" />
+                <ScalarProperty Name="UltimaConsulta" ColumnName="UltimaConsulta" />
+                <ScalarProperty Name="ProximaConsulta" ColumnName="ProximaConsulta" />
+                <ScalarProperty Name="Historico" ColumnName="Historico" />
+                <ScalarProperty Name="RgVet" ColumnName="RgVet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemUsers">
+            <EntityTypeMapping TypeName="dbVeterinariaModel.SystemUsers">
+              <MappingFragment StoreEntitySet="SystemUsers">
+                <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+                <ScalarProperty Name="RgUsuario" ColumnName="RgUsuario" />
+                <ScalarProperty Name="NomeComp" ColumnName="NomeComp" />
+                <ScalarProperty Name="senha" ColumnName="senha" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Veterinarios">
+            <EntityTypeMapping TypeName="dbVeterinariaModel.Veterinarios">
+              <MappingFragment StoreEntitySet="Veterinarios">
+                <ScalarProperty Name="IdVeterinario" ColumnName="IdVeterinario" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="RG" ColumnName="RG" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Especialidade" ColumnName="Especialidade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
