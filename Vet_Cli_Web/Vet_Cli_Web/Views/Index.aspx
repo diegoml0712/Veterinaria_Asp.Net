@@ -30,7 +30,7 @@
                 </table>
                 <div class="box2">
 
-                    <table border="0">
+                    <table border="0" style="margin-left:180px">
                         <tr>
                             <td>
                                 <img src="Img/user.png" alt="user:" width='24' height='24' />

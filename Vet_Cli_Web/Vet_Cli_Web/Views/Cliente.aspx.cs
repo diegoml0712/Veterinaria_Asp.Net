@@ -61,7 +61,7 @@ namespace Vet_Cli_Web.Views
                         var rua = tb.Clientes.Where(u => u.RgUsuario == origem.Text)
                              .Select(u => u.Rua)
                              .SingleOrDefault();
-                        lblRua.Text = "Rua: " + rua;
+                        lblRua.Text = rua;
 
                         var num = tb.Clientes.Where(u => u.RgUsuario == origem.Text)
                              .Select(u => u.Numero)
@@ -88,7 +88,7 @@ namespace Vet_Cli_Web.Views
                         var pcon = tb.Pets.Where(u => u.RgUsuario == origem.Text)
                              .Select(u => u.ProximaConsulta)
                              .SingleOrDefault();
-                        lblPCon.Text = "P´roxima Consulta: " + pcon;
+                        lblPCon.Text = "Próxima Consulta: " + pcon;
 
                         var hist = tb.Pets.Where(u => u.RgUsuario == origem.Text)
                              .Select(u => u.Historico)

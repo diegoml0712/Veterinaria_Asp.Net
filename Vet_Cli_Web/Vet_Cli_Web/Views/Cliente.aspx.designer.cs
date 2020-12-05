@@ -24,6 +24,15 @@ namespace Vet_Cli_Web.Views
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Controle Home.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink Home;
+
+        /// <summary>
         /// Controle lblNome.
         /// </summary>
         /// <remarks>
@@ -60,42 +69,6 @@ namespace Vet_Cli_Web.Views
         protected global::System.Web.UI.WebControls.Label lblFone;
 
         /// <summary>
-        /// Controle lblCep.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCep;
-
-        /// <summary>
-        /// Controle lblUf.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUf;
-
-        /// <summary>
-        /// Controle lblCidade.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCidade;
-
-        /// <summary>
-        /// Controle lblBairro.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBairro;
-
-        /// <summary>
         /// Controle lblRua.
         /// </summary>
         /// <remarks>
@@ -114,6 +87,15 @@ namespace Vet_Cli_Web.Views
         protected global::System.Web.UI.WebControls.Label lblNumero;
 
         /// <summary>
+        /// Controle lblBairro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblBairro;
+
+        /// <summary>
         /// Controle lblComplemento.
         /// </summary>
         /// <remarks>
@@ -121,6 +103,33 @@ namespace Vet_Cli_Web.Views
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblComplemento;
+
+        /// <summary>
+        /// Controle lblCidade.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCidade;
+
+        /// <summary>
+        /// Controle lblUf.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUf;
+
+        /// <summary>
+        /// Controle lblCep.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCep;
 
         /// <summary>
         /// Controle lblReferencia.
@@ -150,15 +159,6 @@ namespace Vet_Cli_Web.Views
         protected global::System.Web.UI.WebControls.Label lblPCon;
 
         /// <summary>
-        /// Controle lblHistorico.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHistorico;
-
-        /// <summary>
         /// Controle lblRgVet.
         /// </summary>
         /// <remarks>
@@ -175,5 +175,14 @@ namespace Vet_Cli_Web.Views
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblVet;
+
+        /// <summary>
+        /// Controle lblHistorico.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHistorico;
     }
 }

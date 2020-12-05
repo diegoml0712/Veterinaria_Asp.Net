@@ -92,6 +92,7 @@
     <Content Include="Views\Cliente.aspx" />
     <Content Include="Views\Img\cadeado2.png" />
     <Content Include="Views\Img\dog2.png" />
+    <Content Include="Views\Img\sair.png" />
     <Content Include="Views\Img\user.png" />
     <Content Include="Views\Index.aspx" />
     <Content Include="Web.config" />
