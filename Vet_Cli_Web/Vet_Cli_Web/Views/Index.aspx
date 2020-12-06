@@ -57,7 +57,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td colspan="2" style="color: red">
                                 <asp:Label ID="lblErros" runat="server" Text=""></asp:Label>
                             </td>
                         </tr>
